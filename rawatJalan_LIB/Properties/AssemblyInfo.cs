@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("RawatJalan_LIB")]
+[assembly: AssemblyTitle("rawatJalan_LIB")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("RawatJalan_LIB")]
+[assembly: AssemblyProduct("rawatJalan_LIB")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("77853733-51bc-4469-857f-a2ca6d014fbc")]
+[assembly: Guid("527ea9c5-894b-4760-bd32-2befe2dbd37b")]
 
 // Version information for an assembly consists of the following four values:
 //
