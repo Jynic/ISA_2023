@@ -42,7 +42,7 @@ namespace ISA_2023
             this.labelUsername.AutoSize = true;
             this.labelUsername.Location = new System.Drawing.Point(37, 33);
             this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(80, 16);
+            this.labelUsername.Size = new System.Drawing.Size(85, 17);
             this.labelUsername.TabIndex = 0;
             this.labelUsername.Text = "Username : ";
             // 
@@ -58,7 +58,7 @@ namespace ISA_2023
             this.labelPassword.AutoSize = true;
             this.labelPassword.Location = new System.Drawing.Point(37, 82);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(77, 16);
+            this.labelPassword.Size = new System.Drawing.Size(81, 17);
             this.labelPassword.TabIndex = 2;
             this.labelPassword.Text = "Password : ";
             // 
@@ -77,6 +77,7 @@ namespace ISA_2023
             this.buttonLogin.TabIndex = 4;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = true;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // buttonExit
             // 
