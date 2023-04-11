@@ -8,17 +8,19 @@ namespace rawatJalan_LIB
 {
     public class Posisi
     {
-        private int id;
-        private string nama;
+        int id;
+        string nama;
 
         public Posisi(int id, string nama)
         {
             Id = id;
             Nama = nama;
         }
-        public Posisi(string nama)
+
+        public Posisi()
         {
-            Nama = nama;
+            Id = 0;
+            Nama = "";
         }
 
         public int Id { get => id; set => id = value; }
