@@ -63,6 +63,20 @@ namespace rawatJalan_LIB
         #endregion
 
         #region METHOD
+
+        public static Boolean TambahData(Akun akun)
+        {
+            string sql = "INSERT INTO akun(id, nama, nik, alamat, ttl, posisi_id, username, password) VALUES ('"
+                + akun.Id + "','" +
+                akun.Nama.Replace("'", "\\'") + "','" + akun.Nik + "','"
+                + akun.Alamat + "','" + akun.Tempat_tanggal_lahir.ToString("yyyy-MM-dd HH:mm:ss") + "','" + akun.Posisi_id.Id + "','" + akun.Username + "','" + akun.Password + "')";
+            int jumlahDitambah = Koneksi.JalankanPerintahDML(sql);
+            if (jumlahDitambah == 0)
+            {
+                return false;
+            }
+            else { return true; }
+        }
         public static List<Akun> BacaData(string kriteria, string nilaiKriteria)
         {
             string sql = "";
@@ -101,6 +115,21 @@ namespace rawatJalan_LIB
                 Posisi p = new Posisi();
                 p.Nama = hasil.GetString(0);
                 temp = p.Nama;
+                return temp;
+            }
+            return temp;
+        }
+
+        public static string CekNIK(string username)
+        {
+            string sql = "select nik " +
+                "from akun " +
+                "where username = '" + username + "'";
+            string temp = "";
+            MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
+            while (hasil.Read() == true)
+            {
+                temp = hasil.GetString(0);
                 return temp;
             }
             return temp;

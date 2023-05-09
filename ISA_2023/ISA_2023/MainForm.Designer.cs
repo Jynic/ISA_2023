@@ -38,8 +38,8 @@ namespace ISA_2023
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jadwalTemuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kartuKontrolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.keluarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.apotikToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.keluarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,12 +48,13 @@ namespace ISA_2023
             this.label_posisi.AutoSize = true;
             this.label_posisi.Location = new System.Drawing.Point(676, 9);
             this.label_posisi.Name = "label_posisi";
-            this.label_posisi.Size = new System.Drawing.Size(57, 17);
+            this.label_posisi.Size = new System.Drawing.Size(55, 16);
             this.label_posisi.TabIndex = 1;
             this.label_posisi.Text = "position";
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.masterToolStripMenuItem,
@@ -61,7 +62,7 @@ namespace ISA_2023
             this.keluarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 29);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -72,25 +73,25 @@ namespace ISA_2023
             this.daftarJadwalTemuToolStripMenuItem,
             this.daftarKartuKontrolToolStripMenuItem});
             this.masterToolStripMenuItem.Name = "masterToolStripMenuItem";
-            this.masterToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.masterToolStripMenuItem.Size = new System.Drawing.Size(72, 25);
             this.masterToolStripMenuItem.Text = "Master";
             // 
             // daftarAkunToolStripMenuItem
             // 
             this.daftarAkunToolStripMenuItem.Name = "daftarAkunToolStripMenuItem";
-            this.daftarAkunToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
+            this.daftarAkunToolStripMenuItem.Size = new System.Drawing.Size(236, 30);
             this.daftarAkunToolStripMenuItem.Text = "Daftar Akun";
             // 
             // daftarJadwalTemuToolStripMenuItem
             // 
             this.daftarJadwalTemuToolStripMenuItem.Name = "daftarJadwalTemuToolStripMenuItem";
-            this.daftarJadwalTemuToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
+            this.daftarJadwalTemuToolStripMenuItem.Size = new System.Drawing.Size(236, 30);
             this.daftarJadwalTemuToolStripMenuItem.Text = "Daftar Jadwal Temu";
             // 
             // daftarKartuKontrolToolStripMenuItem
             // 
             this.daftarKartuKontrolToolStripMenuItem.Name = "daftarKartuKontrolToolStripMenuItem";
-            this.daftarKartuKontrolToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
+            this.daftarKartuKontrolToolStripMenuItem.Size = new System.Drawing.Size(236, 30);
             this.daftarKartuKontrolToolStripMenuItem.Text = "Daftar Kartu Kontrol";
             // 
             // menuToolStripMenuItem
@@ -100,33 +101,34 @@ namespace ISA_2023
             this.kartuKontrolToolStripMenuItem,
             this.apotikToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(64, 25);
             this.menuToolStripMenuItem.Text = "Menu";
             // 
             // jadwalTemuToolStripMenuItem
             // 
             this.jadwalTemuToolStripMenuItem.Name = "jadwalTemuToolStripMenuItem";
-            this.jadwalTemuToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.jadwalTemuToolStripMenuItem.Size = new System.Drawing.Size(189, 30);
             this.jadwalTemuToolStripMenuItem.Text = "Jadwal Temu";
             this.jadwalTemuToolStripMenuItem.Click += new System.EventHandler(this.jadwalTemuToolStripMenuItem_Click);
             // 
             // kartuKontrolToolStripMenuItem
             // 
             this.kartuKontrolToolStripMenuItem.Name = "kartuKontrolToolStripMenuItem";
-            this.kartuKontrolToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.kartuKontrolToolStripMenuItem.Size = new System.Drawing.Size(189, 30);
             this.kartuKontrolToolStripMenuItem.Text = "Kartu Kontrol";
-            // 
-            // keluarToolStripMenuItem
-            // 
-            this.keluarToolStripMenuItem.Name = "keluarToolStripMenuItem";
-            this.keluarToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
-            this.keluarToolStripMenuItem.Text = "Keluar";
             // 
             // apotikToolStripMenuItem
             // 
             this.apotikToolStripMenuItem.Name = "apotikToolStripMenuItem";
-            this.apotikToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.apotikToolStripMenuItem.Size = new System.Drawing.Size(189, 30);
             this.apotikToolStripMenuItem.Text = "Apotek";
+            // 
+            // keluarToolStripMenuItem
+            // 
+            this.keluarToolStripMenuItem.Name = "keluarToolStripMenuItem";
+            this.keluarToolStripMenuItem.Size = new System.Drawing.Size(68, 25);
+            this.keluarToolStripMenuItem.Text = "Keluar";
+            this.keluarToolStripMenuItem.Click += new System.EventHandler(this.keluarToolStripMenuItem_Click);
             // 
             // MainForm
             // 

@@ -60,6 +60,9 @@ namespace ISA_2023
             frmJt.Show();
         }
 
-        
+        private void keluarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

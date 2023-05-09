@@ -15,3 +15,34 @@ C:\Users\LopMiz\Documents\KULIAH\SEMESTER IV\ISA\ISA_2023\ISA_2023\obj\Debug\ISA
 C:\Users\LopMiz\Documents\KULIAH\SEMESTER IV\ISA\ISA_2023\ISA_2023\obj\Debug\ISA_2023.pdb
 C:\Users\LopMiz\Documents\KULIAH\SEMESTER IV\ISA\ISA_2023\ISA_2023\obj\Debug\ISA_2023.FormJadwalTemu.resources
 C:\Users\LopMiz\Documents\KULIAH\SEMESTER IV\ISA\ISA_2023\ISA_2023\obj\Debug\ISA_2023.FormTambahJadwalTemu.resources
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\bin\Debug\ISA_2023.exe.config
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\bin\Debug\ISA_2023.exe
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\bin\Debug\ISA_2023.pdb
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\bin\Debug\rawatJalan_LIB.dll
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\bin\Debug\MySql.Data.dll
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\bin\Debug\rawatJalan_LIB.pdb
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\obj\Debug\ISA_2023.csproj.AssemblyReference.cache
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\obj\Debug\ISA_2023.DaftarFormJadwalTemu.resources
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\obj\Debug\ISA_2023.FormJadwalTemu.resources
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\obj\Debug\ISA_2023.FormLogin.resources
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\obj\Debug\ISA_2023.FormTambahAkun.resources
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\obj\Debug\ISA_2023.FormTambahJadwalTemu.resources
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\obj\Debug\ISA_2023.FormUbahJadwalTemu.resources
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\obj\Debug\ISA_2023.MainForm.resources
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\obj\Debug\ISA_2023.Properties.Resources.resources
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\obj\Debug\ISA_2023.csproj.GenerateResource.cache
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\obj\Debug\ISA_2023.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\obj\Debug\ISA_2023.csproj.CopyComplete
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\obj\Debug\ISA_2023.exe
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\obj\Debug\ISA_2023.pdb
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\bin\Debug\Google.Protobuf.dll
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\bin\Debug\ZstdNet.dll
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\bin\Debug\System.Memory.dll
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\bin\Debug\System.Buffers.dll
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\bin\Debug\MySql.Data.xml
+C:\Users\ASUS\OneDrive\Documents\GitHub\ISA_2023\ISA_2023\ISA_2023\obj\Debug\ISA_2023.exe.config
