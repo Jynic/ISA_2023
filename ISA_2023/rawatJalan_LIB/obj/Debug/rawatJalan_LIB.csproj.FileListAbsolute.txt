@@ -1,0 +1,8 @@
+C:\Users\LopMiz\Documents\KULIAH\SEMESTER IV\ISA\ISA_2023\rawatJalan_LIB\bin\Debug\rawatJalan_LIB.dll
+C:\Users\LopMiz\Documents\KULIAH\SEMESTER IV\ISA\ISA_2023\rawatJalan_LIB\bin\Debug\rawatJalan_LIB.pdb
+C:\Users\LopMiz\Documents\KULIAH\SEMESTER IV\ISA\ISA_2023\rawatJalan_LIB\bin\Debug\MySql.Data.dll
+C:\Users\LopMiz\Documents\KULIAH\SEMESTER IV\ISA\ISA_2023\rawatJalan_LIB\obj\Debug\rawatJalan_LIB.csproj.AssemblyReference.cache
+C:\Users\LopMiz\Documents\KULIAH\SEMESTER IV\ISA\ISA_2023\rawatJalan_LIB\obj\Debug\rawatJalan_LIB.csproj.CoreCompileInputs.cache
+C:\Users\LopMiz\Documents\KULIAH\SEMESTER IV\ISA\ISA_2023\rawatJalan_LIB\obj\Debug\rawatJalan_LIB.csproj.CopyComplete
+C:\Users\LopMiz\Documents\KULIAH\SEMESTER IV\ISA\ISA_2023\rawatJalan_LIB\obj\Debug\rawatJalan_LIB.dll
+C:\Users\LopMiz\Documents\KULIAH\SEMESTER IV\ISA\ISA_2023\rawatJalan_LIB\obj\Debug\rawatJalan_LIB.pdb
