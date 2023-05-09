@@ -38,10 +38,14 @@ namespace ISA_2023
                     else if (status == "Dokter")
                     {
                         label_posisi.Text = "dokter";
+                        masterToolStripMenuItem.Enabled = false;
+                        masterToolStripMenuItem.Visible = false;
                     }
                     else if (status == "Pasien")
                     {
                         label_posisi.Text = "pasien";
+                        masterToolStripMenuItem.Enabled = false;
+                        masterToolStripMenuItem.Visible = false; ;
                     }
                 }
                 else
@@ -60,6 +64,23 @@ namespace ISA_2023
             frmJt.Show();
         }
 
-        
+        private void keluarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void daftarKartuKontrolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormDaftarKartuKontrol frm = new FormDaftarKartuKontrol();
+            frm.Owner = this;
+            frm.ShowDialog();
+        }
+
+        private void kartuKontrolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormKartuKontrol frm = new FormKartuKontrol();
+            frm.Owner = this;
+            frm.ShowDialog();
+        }
     }
 }
