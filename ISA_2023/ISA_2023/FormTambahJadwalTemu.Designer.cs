@@ -38,13 +38,15 @@ namespace ISA_2023
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxKeluhan = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBoxStatus = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonSimpan = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.buttonHapus = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -73,13 +75,13 @@ namespace ISA_2023
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.OrangeRed;
+            this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.comboBoxDokter);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.comboBoxPasien);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.textBoxKeluhan);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.comboBoxStatus);
             this.panel2.Controls.Add(this.dateTimePicker1);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
@@ -153,18 +155,6 @@ namespace ISA_2023
             this.label5.TabIndex = 8;
             this.label5.Text = "KELUHAN";
             // 
-            // comboBoxStatus
-            // 
-            this.comboBoxStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxStatus.FormattingEnabled = true;
-            this.comboBoxStatus.Items.AddRange(new object[] {
-            "Bertemu",
-            "Belum bertemu"});
-            this.comboBoxStatus.Location = new System.Drawing.Point(154, 111);
-            this.comboBoxStatus.Name = "comboBoxStatus";
-            this.comboBoxStatus.Size = new System.Drawing.Size(200, 33);
-            this.comboBoxStatus.TabIndex = 7;
-            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -224,7 +214,7 @@ namespace ISA_2023
             this.buttonSimpan.BackColor = System.Drawing.Color.OrangeRed;
             this.buttonSimpan.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSimpan.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonSimpan.Location = new System.Drawing.Point(649, 444);
+            this.buttonSimpan.Location = new System.Drawing.Point(12, 444);
             this.buttonSimpan.Name = "buttonSimpan";
             this.buttonSimpan.Size = new System.Drawing.Size(139, 42);
             this.buttonSimpan.TabIndex = 26;
@@ -232,11 +222,49 @@ namespace ISA_2023
             this.buttonSimpan.UseVisualStyleBackColor = false;
             this.buttonSimpan.Click += new System.EventHandler(this.buttonSimpan_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.SeaShell;
+            this.label8.Location = new System.Drawing.Point(157, 120);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(167, 24);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Belum Bertemu";
+            // 
+            // buttonHapus
+            // 
+            this.buttonHapus.BackColor = System.Drawing.Color.OrangeRed;
+            this.buttonHapus.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHapus.ForeColor = System.Drawing.SystemColors.Control;
+            this.buttonHapus.Location = new System.Drawing.Point(332, 444);
+            this.buttonHapus.Name = "buttonHapus";
+            this.buttonHapus.Size = new System.Drawing.Size(139, 42);
+            this.buttonHapus.TabIndex = 27;
+            this.buttonHapus.Text = "Hapus";
+            this.buttonHapus.UseVisualStyleBackColor = false;
+            // 
+            // buttonExit
+            // 
+            this.buttonExit.BackColor = System.Drawing.Color.OrangeRed;
+            this.buttonExit.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.ForeColor = System.Drawing.SystemColors.Control;
+            this.buttonExit.Location = new System.Drawing.Point(649, 444);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(139, 42);
+            this.buttonExit.TabIndex = 28;
+            this.buttonExit.Text = "Keluar";
+            this.buttonExit.UseVisualStyleBackColor = false;
+            // 
             // FormTambahJadwalTemu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 498);
+            this.Controls.Add(this.buttonExit);
+            this.Controls.Add(this.buttonHapus);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.buttonSimpan);
@@ -262,12 +290,14 @@ namespace ISA_2023
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBoxKeluhan;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBoxStatus;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonSimpan;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button buttonHapus;
+        private System.Windows.Forms.Button buttonExit;
     }
 }

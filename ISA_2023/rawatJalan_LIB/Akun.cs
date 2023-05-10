@@ -63,6 +63,7 @@ namespace rawatJalan_LIB
         #endregion
 
         #region METHOD
+
         public static List<Akun> BacaData(string kriteria, string nilaiKriteria)
         {
             string sql = "";
@@ -131,6 +132,7 @@ namespace rawatJalan_LIB
         {
             return Id.ToString();
         }
+
 
         #endregion
     }
