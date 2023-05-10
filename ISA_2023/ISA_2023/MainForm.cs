@@ -38,10 +38,14 @@ namespace ISA_2023
                     else if (status == "Dokter")
                     {
                         label_posisi.Text = "dokter";
+                        masterToolStripMenuItem.Enabled = false;
+                        masterToolStripMenuItem.Visible = false;
                     }
                     else if (status == "Pasien")
                     {
                         label_posisi.Text = "pasien";
+                        masterToolStripMenuItem.Enabled = false;
+                        masterToolStripMenuItem.Visible = false; ;
                     }
                 }
                 else
@@ -60,37 +64,23 @@ namespace ISA_2023
             frmJt.Show();
         }
 
-        private void apotikToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormApotek frmapotek = new FormApotek();
-            frmapotek.Owner = this;
-            frmapotek.Show();
-        }
-
-        private void daftarObatApotekToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormDaftarApotek frmtambahapotek = new FormDaftarApotek();
-            frmtambahapotek.Owner = this;
-            frmtambahapotek.Show();
-        }
-
-        private void daftarPengajuanObatToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormAkun_has_Apotek frm = new FormAkun_has_Apotek();
-            frm.Owner = this;
-            frm.Show();
-        }
-
         private void keluarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void obatPasienToolStripMenuItem_Click(object sender, EventArgs e)
+        private void daftarKartuKontrolToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormDaftarObatPasien frm = new FormDaftarObatPasien();
+            FormDaftarKartuKontrol frm = new FormDaftarKartuKontrol();
             frm.Owner = this;
-            frm.Show();
+            frm.ShowDialog();
+        }
+
+        private void kartuKontrolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormKartuKontrol frm = new FormKartuKontrol();
+            frm.Owner = this;
+            frm.ShowDialog();
         }
     }
 }

@@ -26,8 +26,12 @@ namespace ISA_2023
         {
             try
             {
+                DesCrypto crypto = new DesCrypto();
                 Koneksi koneksi = new Koneksi();
-                Akun a = Akun.CekLogin(textBoxUsername.Text, textBoxPassword.Text);
+                Akun a = new Akun();
+                string username = textBoxUsername.Text;
+                string nik = Akun.CekNIK(username);
+                a = Akun.CekLogin(username, crypto.Encrypt(nik, textBoxPassword.Text));
 
                 MainForm frmMain = (MainForm)this.Owner;
                 frmMain.akun = a;
@@ -42,6 +46,18 @@ namespace ISA_2023
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void labelBuatAkun_Click(object sender, EventArgs e)
+        {
+            FormTambahAkun frm = new FormTambahAkun();
+            frm.Owner = this;
+            frm.ShowDialog();
         }
     }
 }

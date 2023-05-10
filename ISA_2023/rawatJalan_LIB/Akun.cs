@@ -64,6 +64,19 @@ namespace rawatJalan_LIB
 
         #region METHOD
 
+        public static Boolean TambahData(Akun akun)
+        {
+            string sql = "INSERT INTO akun(id, nama, nik, alamat, ttl, posisi_id, username, password) VALUES ('"
+                + akun.Id + "','" +
+                akun.Nama.Replace("'", "\\'") + "','" + akun.Nik + "','"
+                + akun.Alamat + "','" + akun.Tempat_tanggal_lahir.ToString("yyyy-MM-dd HH:mm:ss") + "','" + akun.Posisi_id.Id + "','" + akun.Username + "','" + akun.Password + "')";
+            int jumlahDitambah = Koneksi.JalankanPerintahDML(sql);
+            if (jumlahDitambah == 0)
+            {
+                return false;
+            }
+            else { return true; }
+        }
         public static List<Akun> BacaData(string kriteria, string nilaiKriteria)
         {
             string sql = "";
@@ -90,6 +103,33 @@ namespace rawatJalan_LIB
             }
             return listAkun;
         }
+        public static List<Akun> BacaDataPasien(string kriteria, string nilaiKriteria)
+        {
+            string sql = "";
+            if (kriteria == "")
+            {
+                sql = "select a.id, a.nama, a.nik, a.alamat, a.ttl, a.posisi_id,a.username,a.password"
+                   + " from akun a inner join posisi p on a.posisi_id = p.id where p.nama = 'Pasien'";
+            }
+            else
+            {
+                sql = "select a.id, a.nama, a.nik, a.alamat, a.ttl, a.posisi_id,a.username,a.password"
+                   + " from akun a inner join posisi p on a.posisi_id = p.id" + " where " + kriteria + " like '%" +
+                   nilaiKriteria + "%'";
+            }
+            MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
+            List<Akun> listAkun = new List<Akun>();
+
+            while (hasil.Read() == true)
+            {
+                Posisi position = new Posisi();
+                Akun akun = new Akun();
+                akun.Nama = hasil.GetString(1);
+                listAkun.Add(akun);
+            }
+            return listAkun;
+        }
+
         public static string CekPosisi(Akun akun)
         {
             string sql = "select p.nama " +
@@ -102,6 +142,21 @@ namespace rawatJalan_LIB
                 Posisi p = new Posisi();
                 p.Nama = hasil.GetString(0);
                 temp = p.Nama;
+                return temp;
+            }
+            return temp;
+        }
+
+        public static string CekNIK(string username)
+        {
+            string sql = "select nik " +
+                "from akun " +
+                "where username = '" + username + "'";
+            string temp = "";
+            MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
+            while (hasil.Read() == true)
+            {
+                temp = hasil.GetString(0);
                 return temp;
             }
             return temp;
@@ -132,7 +187,6 @@ namespace rawatJalan_LIB
         {
             return Id.ToString();
         }
-
 
         #endregion
     }

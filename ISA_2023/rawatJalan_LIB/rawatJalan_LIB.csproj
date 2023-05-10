@@ -47,8 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Akun.cs" />
-    <Compile Include="Akun_has_Apotek.cs" />
-    <Compile Include="Apotek.cs" />
+    <Compile Include="DesCrypto.cs" />
+    <Compile Include="Dokter_KartuKontrol.cs" />
     <Compile Include="JadwalTemu.cs" />
     <Compile Include="KartuKontrol.cs" />
     <Compile Include="Koneksi.cs" />
