@@ -85,5 +85,11 @@ namespace rawatJalan_LIB
         {
             return Id.ToString();
         }
+        public static void UpdateQuantity(Apotek a)
+        {
+            string sql = "uddate apotek set quantity = '"+a.Quantity+"'";
+            Koneksi.JalankanPerintahDML(sql);
+        }
+        
     }
 }

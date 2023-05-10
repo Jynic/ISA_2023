@@ -26,7 +26,7 @@ namespace ISA_2023
             {
                 main = (MainForm)this.Owner;
                 Akun akun = main.akun;
-                listofAkunhasApotek = Akun_has_Apotek.BacaDataPasien();
+                listofAkunhasApotek = Akun_has_Apotek.BacaData("","");
                 if (listofAkunhasApotek.Count >= 1 && listofAkunhasApotek != null)
                 {
                     dataGridViewDisplay.DataSource = listofAkunhasApotek;

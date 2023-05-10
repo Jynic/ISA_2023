@@ -76,6 +76,7 @@ namespace ISA_2023
                     Apotek b = new Apotek(int.Parse(id_obat));
                     Akun_has_Apotek aha = new Akun_has_Apotek(int.Parse(id), akun, b);
                     Akun_has_Apotek.UbahData(aha);
+                    //Apotek.UpdateQuantity()
                     MessageBox.Show("Berhasil dirubah.");
 
                     FormAkun_has_Apotek_Load(buttonKeluar, e);
