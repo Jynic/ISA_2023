@@ -37,7 +37,7 @@ namespace ISA_2023
                 string id = JadwalTemu.GenerateId();
                 Akun pasien = (Akun)comboBoxPasien.SelectedItem;
                 Akun dokter = (Akun)comboBoxDokter.SelectedItem;
-                JadwalTemu jdwl = new JadwalTemu(int.Parse(id), tanggal, comboBoxStatus.Text, textBoxKeluhan.Text, pasien, dokter);
+                JadwalTemu jdwl = new JadwalTemu(int.Parse(id), tanggal, label8.Text, textBoxKeluhan.Text, pasien, dokter);
                 Boolean statusTambah = JadwalTemu.TambahData(jdwl);
                 if (statusTambah == true)
                 {
