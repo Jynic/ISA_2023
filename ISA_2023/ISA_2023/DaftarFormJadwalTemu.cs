@@ -12,9 +12,5 @@ namespace ISA_2023
 {
     public partial class DaftarFormJadwalTemu : Form
     {
-        public DaftarFormJadwalTemu()
-        {
-            InitializeComponent();
-        }
     }
 }

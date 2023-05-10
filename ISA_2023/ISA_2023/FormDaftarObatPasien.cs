@@ -26,20 +26,10 @@ namespace ISA_2023
             {
                 main = (MainForm)this.Owner;
                 Akun akun = main.akun;
-                listofAkunhasApotek = Akun_has_Apotek.BacaDataPasien();
+                listofAkunhasApotek = Akun_has_Apotek.BacaData("","");
                 if (listofAkunhasApotek.Count >= 1 && listofAkunhasApotek != null)
                 {
                     dataGridViewDisplay.DataSource = listofAkunhasApotek;
-                    //if (dataGridViewDisplay.ColumnCount > 1)
-                    //{
-
-                    //    DataGridViewButtonColumn bcol = new DataGridViewButtonColumn();
-                    //    bcol.HeaderText = "Aksi";
-                    //    bcol.Text = "Terima";
-                    //    bcol.Name = "btnUbah";
-                    //    bcol.UseColumnTextForButtonValue = true;
-                    //    dataGridViewAkun_has_Apotek.Columns.Add(bcol);
-                    //}
                 }
                 else
                 {
