@@ -22,22 +22,39 @@ namespace ISA_2023
 
         private void FormTambahJadwalTemu_Load(object sender, EventArgs e)
         {
-            listAkunPasien = Akun.BacaData("", "");
-            listAkunDokter = Akun.BacaData("", "");
+            FormJadwalTemu frmjt = (FormJadwalTemu)this.Owner;
+            MainForm main = (MainForm)frmjt.Owner;
+            string status = main.status;
+            if (status == "Pasien")
+            {
+                listAkunPasien = Akun.BacaDataPasien(main.akun.Id);
+                listAkunDokter = Akun.BacaDataDokter();
+            }
+            else if (status == "Dokter")
+            {
+                listAkunDokter = Akun.BacaDataDokter2(main.akun.Id);
+                listAkunPasien = Akun.BacaDataPasien2();
+            }
+            else if (status == "Admin")
+            {
+                listAkunDokter = Akun.BacaDataDokter();
+                listAkunPasien = Akun.BacaDataPasien2();
+            }
             comboBoxPasien.DataSource = listAkunPasien;
-            comboBoxPasien.DisplayMember = "Id";
+            comboBoxPasien.DisplayMember = "Nama";
             comboBoxDokter.DataSource = listAkunDokter;
-            comboBoxDokter.DisplayMember = "Id";
+            comboBoxDokter.DisplayMember = "Nama";
         }
         private void buttonSimpan_Click(object sender, EventArgs e)
         {
             try
             {
-                DateTime tanggal = DateTime.Now;
+                DateTime tanggal = dateTimePicker1.Value;
+                string status = "";
                 string id = JadwalTemu.GenerateId();
                 Akun pasien = (Akun)comboBoxPasien.SelectedItem;
                 Akun dokter = (Akun)comboBoxDokter.SelectedItem;
-                JadwalTemu jdwl = new JadwalTemu(int.Parse(id), tanggal, comboBoxStatus.Text, textBoxKeluhan.Text, pasien, dokter);
+                JadwalTemu jdwl = new JadwalTemu(int.Parse(id), tanggal, status, textBoxKeluhan.Text, pasien, dokter);
                 Boolean statusTambah = JadwalTemu.TambahData(jdwl);
                 if (statusTambah == true)
                 {

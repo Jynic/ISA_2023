@@ -90,6 +90,68 @@ namespace rawatJalan_LIB
             }
             return listAkun;
         }
+        public static List<Akun> BacaDataDokter()
+        {
+            string sql = "select a.id, a.nama"
+                   + " from akun a inner join posisi p on a.posisi_id = p.id where p.id = 2";
+            MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
+            List<Akun> listAkun = new List<Akun>();
+            while (hasil.Read() == true)
+            {
+                Akun akun = new Akun();
+                akun.Id = int.Parse(hasil.GetString(0));
+                akun.Nama = hasil.GetString(1);
+                listAkun.Add(akun);
+            }
+            return listAkun;
+        }
+        public static List<Akun> BacaDataDokter2(int id)
+        {
+            string sql = "select id, nama"
+                   + " from akun where id = " + id;
+            MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
+            List<Akun> listAkun = new List<Akun>();
+            while (hasil.Read() == true)
+            {
+                Akun akun = new Akun();
+                akun.Id = int.Parse(hasil.GetString(0));
+                akun.Nama = hasil.GetString(1);
+                listAkun.Add(akun);
+            }
+            return listAkun;
+        }
+        public static List<Akun> BacaDataPasien(int id)
+        {
+            string sql = "select id, nama from akun where id = " + id;
+            MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
+            List<Akun> listAkun = new List<Akun>();
+
+            while (hasil.Read() == true)
+            {
+                Posisi position = new Posisi();
+                Akun akun = new Akun();
+                akun.Id = int.Parse(hasil.GetString(0));
+                akun.Nama = hasil.GetString(1);
+                listAkun.Add(akun);
+            }
+            return listAkun;
+        }
+        public static List<Akun> BacaDataPasien2()
+        {
+            string sql = "select a.id, a.nama from akun a inner join posisi p on a.posisi_id = p.id where p.id=3 ";
+            MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
+            List<Akun> listAkun = new List<Akun>();
+
+            while (hasil.Read() == true)
+            {
+                Posisi position = new Posisi();
+                Akun akun = new Akun();
+                akun.Id = int.Parse(hasil.GetString(0));
+                akun.Nama = hasil.GetString(1);
+                listAkun.Add(akun);
+            }
+            return listAkun;
+        }
         public static string CekPosisi(Akun akun)
         {
             string sql = "select p.nama " +
