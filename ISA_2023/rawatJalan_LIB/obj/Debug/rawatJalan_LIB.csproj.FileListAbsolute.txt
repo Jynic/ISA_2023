@@ -6,3 +6,21 @@ C:\Users\LopMiz\Documents\KULIAH\SEMESTER IV\ISA\ISA_2023\rawatJalan_LIB\obj\Deb
 C:\Users\LopMiz\Documents\KULIAH\SEMESTER IV\ISA\ISA_2023\rawatJalan_LIB\obj\Debug\rawatJalan_LIB.csproj.CopyComplete
 C:\Users\LopMiz\Documents\KULIAH\SEMESTER IV\ISA\ISA_2023\rawatJalan_LIB\obj\Debug\rawatJalan_LIB.dll
 C:\Users\LopMiz\Documents\KULIAH\SEMESTER IV\ISA\ISA_2023\rawatJalan_LIB\obj\Debug\rawatJalan_LIB.pdb
+D:\UBAYA Semester 4\ISA\git_ISA\ISABARU\ISA_2023\ISA_2023\rawatJalan_LIB\obj\Debug\rawatJalan_LIB.csproj.AssemblyReference.cache
+D:\UBAYA Semester 4\ISA\git_ISA\ISABARU\ISA_2023\ISA_2023\rawatJalan_LIB\obj\Debug\rawatJalan_LIB.csproj.CoreCompileInputs.cache
+D:\UBAYA Semester 4\ISA\git_ISA\ISABARU\ISA_2023\ISA_2023\rawatJalan_LIB\obj\Debug\rawatJalan_LIB.dll
+D:\UBAYA Semester 4\ISA\git_ISA\ISABARU\ISA_2023\ISA_2023\rawatJalan_LIB\obj\Debug\rawatJalan_LIB.pdb
+D:\UBAYA Semester 4\ISA\git_ISA\ISABARU\ISA_2023\ISA_2023\rawatJalan_LIB\bin\Debug\rawatJalan_LIB.dll
+D:\UBAYA Semester 4\ISA\git_ISA\ISABARU\ISA_2023\ISA_2023\rawatJalan_LIB\bin\Debug\rawatJalan_LIB.pdb
+D:\UBAYA Semester 4\ISA\git_ISA\ISABARU\ISA_2023\ISA_2023\rawatJalan_LIB\bin\Debug\MySql.Data.dll
+D:\UBAYA Semester 4\ISA\git_ISA\ISABARU\ISA_2023\ISA_2023\rawatJalan_LIB\bin\Debug\Google.Protobuf.dll
+D:\UBAYA Semester 4\ISA\git_ISA\ISABARU\ISA_2023\ISA_2023\rawatJalan_LIB\bin\Debug\ZstdNet.dll
+D:\UBAYA Semester 4\ISA\git_ISA\ISABARU\ISA_2023\ISA_2023\rawatJalan_LIB\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\UBAYA Semester 4\ISA\git_ISA\ISABARU\ISA_2023\ISA_2023\rawatJalan_LIB\bin\Debug\BouncyCastle.Crypto.dll
+D:\UBAYA Semester 4\ISA\git_ISA\ISABARU\ISA_2023\ISA_2023\rawatJalan_LIB\bin\Debug\System.Memory.dll
+D:\UBAYA Semester 4\ISA\git_ISA\ISABARU\ISA_2023\ISA_2023\rawatJalan_LIB\bin\Debug\System.Buffers.dll
+D:\UBAYA Semester 4\ISA\git_ISA\ISABARU\ISA_2023\ISA_2023\rawatJalan_LIB\bin\Debug\K4os.Compression.LZ4.dll
+D:\UBAYA Semester 4\ISA\git_ISA\ISABARU\ISA_2023\ISA_2023\rawatJalan_LIB\bin\Debug\K4os.Hash.xxHash.dll
+D:\UBAYA Semester 4\ISA\git_ISA\ISABARU\ISA_2023\ISA_2023\rawatJalan_LIB\bin\Debug\System.Numerics.Vectors.dll
+D:\UBAYA Semester 4\ISA\git_ISA\ISABARU\ISA_2023\ISA_2023\rawatJalan_LIB\bin\Debug\MySql.Data.xml
+D:\UBAYA Semester 4\ISA\git_ISA\ISABARU\ISA_2023\ISA_2023\rawatJalan_LIB\obj\Debug\rawatJalan_LIB.csproj.CopyComplete
