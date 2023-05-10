@@ -50,14 +50,58 @@ namespace rawatJalan_LIB
         public Akun Akun_dokter { get => akun_dokter; set => akun_dokter = value; }
         #endregion
         #region METHOD
-        public static List<JadwalTemu> BacaData(string kriteria)
+        public static List<JadwalTemu> BacaData()
         {
-            
-            string sql = "";
-            if (kriteria == "")
+
+            string sql = "select * from jadwal_janji_temu";
+            MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
+            List<JadwalTemu> listJadwalTemu = new List<JadwalTemu>();
+
+            while (hasil.Read() == true)
             {
-                sql = "select * from jadwal_janji_temu";
+                JadwalTemu jadwal = new JadwalTemu();
+                jadwal.Id = int.Parse(hasil.GetString(0));
+                jadwal.Tanggal = DateTime.Parse(hasil.GetValue(1).ToString());
+                jadwal.Status = hasil.GetString(2);
+                jadwal.Keluhan = hasil.GetString(3);
+                Akun akunPasien = new Akun();
+                akunPasien.Id = hasil.GetInt32(4);
+                jadwal.Akun_pasien = akunPasien;
+                Akun akunDokter = new Akun();
+                akunDokter.Id = hasil.GetInt32(5);
+                jadwal.Akun_dokter = akunDokter;
+                listJadwalTemu.Add(jadwal);
             }
+            return listJadwalTemu;
+        }
+        public static List<JadwalTemu> BacaDataPasien(int id)
+        {
+
+            string sql = "select * from jadwal_janji_temu where akun_pasien = " + id;
+            MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
+            List<JadwalTemu> listJadwalTemu = new List<JadwalTemu>();
+
+            while (hasil.Read() == true)
+            {
+                JadwalTemu jadwal = new JadwalTemu();
+                jadwal.Id = int.Parse(hasil.GetString(0));
+                jadwal.Tanggal = DateTime.Parse(hasil.GetValue(1).ToString());
+                jadwal.Status = hasil.GetString(2);
+                jadwal.Keluhan = hasil.GetString(3);
+                Akun akunPasien = new Akun();
+                akunPasien.Id = hasil.GetInt32(4);
+                jadwal.Akun_pasien = akunPasien;
+                Akun akunDokter = new Akun();
+                akunDokter.Id = hasil.GetInt32(5);
+                jadwal.Akun_dokter = akunDokter;
+                listJadwalTemu.Add(jadwal);
+            }
+            return listJadwalTemu;
+        }
+        public static List<JadwalTemu> BacaDataDokter(int id)
+        {
+
+            string sql = "select * from jadwal_janji_temu where akun_dokter = " + id;
             MySqlDataReader hasil = Koneksi.JalankanPerintahQuery(sql);
             List<JadwalTemu> listJadwalTemu = new List<JadwalTemu>();
 
@@ -80,11 +124,37 @@ namespace rawatJalan_LIB
         }
         public static Boolean TambahData(JadwalTemu j)
         {
-            string sql = "insert into jadwal_janji_temu(id, tanggal, status, keluhan, akun_pasien, akun_dokter) values ("+j.id+",'"+j.Tanggal.ToString("yyyy-MM-dd HH:mm:ss") + "','"+j.Status+"','"+j.Keluhan+"','"+j.Akun_pasien+"','"+j.Akun_dokter+"')";
+            string sql = "insert into jadwal_janji_temu(id, tanggal, status, keluhan, akun_pasien, akun_dokter) values (" + j.id + ",'" + j.Tanggal.ToString("yyyy-MM-dd HH:mm:ss") + "','" + "Belum Bertemu" + "','" + j.Keluhan + "','" + j.Akun_pasien + "','" + j.Akun_dokter + "')";
 
-           
+
             int jumlahDitambah = Koneksi.JalankanPerintahDML(sql);
-            if(jumlahDitambah == 0)
+            if (jumlahDitambah == 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        public static Boolean HapusData(JadwalTemu j)
+        {
+            string sql = "delete from jadwal_janji_temu where id = '" + j.Id + "'";
+            int jumlahDiubah = Convert.ToInt32(Koneksi.JalankanPerintahDML(sql));
+            if (jumlahDiubah == 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        public static Boolean UbahStatusJadwal(int id)
+        {
+            string sql = "update jadwal_janji_temu set status = '" + "Bertemu" + "' where id = " + id;
+            int ubahData = Koneksi.JalankanPerintahDML(sql);
+            if (ubahData == 0)
             {
                 return false;
             }

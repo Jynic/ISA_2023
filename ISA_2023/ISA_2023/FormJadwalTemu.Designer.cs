@@ -103,6 +103,7 @@ namespace ISA_2023
             this.buttonKeluar.TabIndex = 39;
             this.buttonKeluar.Text = "&KELUAR";
             this.buttonKeluar.UseVisualStyleBackColor = false;
+            this.buttonKeluar.Click += new System.EventHandler(this.buttonKeluar_Click);
             // 
             // buttonTambah
             // 
@@ -125,6 +126,7 @@ namespace ISA_2023
             this.dataGridViewInbox.RowTemplate.Height = 24;
             this.dataGridViewInbox.Size = new System.Drawing.Size(708, 263);
             this.dataGridViewInbox.TabIndex = 37;
+            this.dataGridViewInbox.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewInbox_CellContentClick);
             // 
             // FormJadwalTemu
             // 

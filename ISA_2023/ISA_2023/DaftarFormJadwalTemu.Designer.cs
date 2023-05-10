@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace ISA_2023
 {
     partial class DaftarFormJadwalTemu
@@ -171,5 +173,6 @@ namespace ISA_2023
         private System.Windows.Forms.TextBox textBoxDaftarJadwalTemu;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonUbah;
+        private EventHandler DaftarFormJadwalTemu_Load;
     }
 }
